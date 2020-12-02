@@ -1,0 +1,20 @@
+.dialoge {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.users {
+margin-left: 15px;;
+}
+.dialog {
+color: white;
+}
+.massege {
+
+}
+.active a{
+    color: gold;
+    text-decoration: none;
+}
+.masseges {
+color: white;
+}
