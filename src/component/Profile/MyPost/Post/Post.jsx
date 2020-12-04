@@ -3,14 +3,14 @@ import classes from './Post.module.css';
 
 function Post(props) {
     return (
-        <div>
+        <div className = {classes.post}>
             <div>New Post</div>
             <div className={classes.item}>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm90m9H82kf98dCcE7nvyjGiqAC2IGfY4xFw&usqp=CAU" />
                 {props.message}
             </div>
                 <div>
-                    <span>like</span>
+                    <span>like  </span>
                 </div>
             
         </div>

@@ -1,4 +1,4 @@
-.dialoge {
+.dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
@@ -8,13 +8,10 @@ margin-left: 15px;;
 .dialog {
 color: white;
 }
-.massege {
-
+.messages {
+color: white;
 }
 .active a{
     color: gold;
     text-decoration: none;
-}
-.masseges {
-color: white;
 }
