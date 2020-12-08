@@ -12,18 +12,11 @@ function Dialogs(props) {
         { id: 4, name: "Sasha" }
     ];
 
-    let dialogsElements = dialogsData
-        .map(el => <DialogsItem name={el.name} id={el.id} />);
+    let dialogsElements =
+        dialogsData.map(el => <DialogsItem name={el.name} id={el.id} />);
 
-    let messagesData = [
-        { id: 1, message: "Hi!" },
-        { id: 2, message: "How are you?" },
-        { id: 3, message: "Good!" }
-    ];
-
-    
-    let messagesElements = messagesData
-        .map(m => <Message message={m.message} />);
+    let messagesElements =
+        props.messagesData.map(m => <Message message={m.message} />);
 
     return (
         <div className={classes.dialogs}>
