@@ -9,22 +9,29 @@ let posts = [
   { id: 2, message: "It's a good!", likesCount: 15 }
 ]
 
-let messagesData = [
+let dialogs = [
+  { id: 1, name: "Misha" },
+  { id: 2, name: "Inna" },
+  { id: 3, name: "Vadim" },
+  { id: 4, name: "Sasha" }
+]
+
+let messages = [
   { id: 1, message: "Hi!" },
   { id: 2, message: "How are you?" },
   { id: 3, message: "Good!" }
 ]
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <App posts={posts} />
-    <App messagesData={messagesData} />
+    <App posts = { posts } dialogs = { dialogs } messages = { messages }/>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()
 

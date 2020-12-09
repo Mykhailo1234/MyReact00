@@ -12,13 +12,13 @@ function App(props) {
       <div className='app-wrapper'>
         <Header />
         <Navbar />
-        <div className='app-wrapper-content'>
-          <Route path='/dialogs' render={() => <Dialogs messagesData={props.messagesData} />} />
-          <Route path='/profile' render={() => <Profile posts={ props.posts } />} />
+        <div className = 'app-wrapper-content'>
+          <Route path = '/dialogs' render = {() => <Dialogs dialogs = { props.dialogs } messages = { props.messages } />} />
+          <Route path = '/profile' render = {() => <Profile posts = { props.posts } />} />
         </div>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -6,4 +6,4 @@ function Message(props) {
         <div className={classes.messages} > {props.message}</div>
     );
 }
-export default Message;
+export default Message
