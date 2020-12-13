@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <nav className={classes.nav}>
             <div>
-                <NavLink to = '/profile' activeClassName = {classes.active}>Profile</NavLink>
+                <NavLink to='/profile' activeClassName={classes.active}>Profile</NavLink>
             </div>
             <div>
                 <NavLink to='/dialogs' activeClassName={classes.active}>Messages</NavLink>
@@ -19,7 +19,9 @@ function Navbar() {
                 <div className={classes.settings}>
                     <NavLink to='/setting' activeClassName={classes.active}>Settings</NavLink>
                 </div>
-
+                <div className={classes.settings}>
+                    <NavLink to='/setting' activeClassName={classes.active}><h3>Friends</h3></NavLink>
+                </div>
             </div>
         </nav>
 
